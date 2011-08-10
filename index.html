@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Hi! Rizh</title>
-</head>
+---
+layout: default
+title: hi! Rizh
+---
 
-<body>
-<h1>hi! welcome.</h1>
-</body>
-</html>
+<ol id="archive">
+
+    	{% for post in site.posts offset: 0 limit: 10 %}
+          <li><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+          <a href="{{ post.url }}">{{ post.title }}</a></li>
+          
+           
+        {% endfor %}
+    
+    </ol>
 
