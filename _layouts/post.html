@@ -31,13 +31,13 @@
 
 <div id="wrapper">
 <h2>{{ page.title }}</h2>
-<p>{{ post.date }}</p>
+<p>{{ page.date | date_to_long_string }}</p>
 {{ content }}
 </div>
 
 <footer>
 <div>
-Powered <i>by</i> <a href="#">Jekyll</a>
+Powered <i>by</i> <a href="http://www.jekyllrb.com">Jekyll</a>
 </div>
 </footer>
 
