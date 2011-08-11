@@ -83,7 +83,7 @@ body {font-size:100%;font-family:"Georgia",Times,serif;background:#ddd}
 #header h1 a:after {content:"";display:block;position:absolute;top:60px;width:0;height:0;border-top:20px solid #000;border-bottom:20px solid transparent; border-left:50px solid #000;border-right:50px solid transparent;-moz-transition: all 0.2s ease}
 #header h1 a:hover {padding-top:50px;color:#FFA800}
 #header h1 a:hover:after {top:90px}
-#header nav {margin:0 120px}
+#header nav {margin:0 0 0 120px}
 #header nav li a {display:block;padding:20px;float:left;color:#ccc}
 #header nav li a:before {content:"{"}
 #header nav li a:after {content:"}"}
