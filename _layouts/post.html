@@ -15,24 +15,27 @@
 	<link rel="stylesheet" href="/css/style.css?v=1">
 
 	</head>
-<body>
+<body id="post">
 <header id="header">
 <div>
-<h1><a href="/">&lt;hr&gt;</a></h1>
+<h2><a href="/">&lt;hr&gt;</a></h2>
 <nav>
 <ul>
-<li><a href="http://hirizh.tumblr.com">Blog</a></li>
+<li><a href="http://hirizh.tumblr.com">Tumblog</a></li>
 <li><a href="http://www.facebook.com/rizqy22">Facebook</a></li>
 <li><a href="http://twitter.com/rizqy22">Twitter</a></li>
+<li><a href="">RSS</a></li>
 </ul>
 </nav>
 </div>
 </header>
 
 <div id="wrapper">
-<h2>{{ page.title }}</h2>
-<p>{{ page.date | date_to_long_string }}</p>
+<article>
+<h1>{{ page.title }}</h1>
+<time datetime="{{ post.date }}" class="date">{{ page.date | date_to_long_string }}</time>
 {{ content }}
+</article>
 </div>
 
 <footer>
