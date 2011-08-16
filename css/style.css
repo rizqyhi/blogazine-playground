@@ -75,6 +75,8 @@ article h3 {font-size:20px;color:#ff5e99}
 article p {line-height:1.5em;margin:10px 0 20px}
 article ul {line-height:1.5em;margin:0 0 20px}
 
+#dsq-global-toolbar, #dsq-footer, #dsq-sort-by {display:none;visibility:hidden}
+
 @media screen and (max-device-width:480px){
 #header {position:absolute}
 #header h1 a, #header h2 a {-moz-transition:none}
