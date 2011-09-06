@@ -1,0 +1,67 @@
+---
+layout: post
+title: Konfigurasi dan Menjalankan Jekyll
+---
+
+<p>Menyambung dari tulisan sebelumnya yaitu, <a href="http://hirizh.github.com/2011/08/18/install-jekyll-ubuntu.html">instalasi Jekyll di Ubuntu</a>, saya melanjutkan untuk bagian konfigurasi awal.</p>
+<p>Saya menggunakan Github untuk hostingnya, maka kita login terlebih dahulu di Github dan buat repositori baru dengan nama <code>username.github.com</code>. Untuk konfigurasi dan instalasi Git di komputer kamu, bisa dibaca di <a href="http://help.github.com">http://help.github.com</a>. Di sana dijelaskan secara rinci bagaimana men-setup Git. Untuk panduan dengan bahasa Indonesia, saya menemukan tulisan <a href="http://fanani.net/blog/belajar-git-dengan-github/">Belajar Git dengan Github</a>.</p>
+
+<h3>Setup Folder</h3>
+<p>Oke. Sekarang masuk ke folder home (saya pakai Ubuntu) dan buat folder dengan nama sama dengan nama repositori yang tadi dibuat, yaitu <code>username.github.com</code>. Masuk ke folder tersebut. Lalu buat struktur seperti di bawah ini:
+{% highlight bash %}
+.
+|-- .gitignore
+|-- README
+|-- _config.yml
+|-- _layouts
+|   -- layout.html
+|   -- post.html
+|-- _posts
+|   -- 2011-08-27-judul-post.markdown
+|-- index.html
+{% endhighlight %}</p>
+<p>Dan berikut adalah penjelasan tiap folder dan file di atas:</p>
+<ol>
+<li>.gitignore
+<p>Ini bukanlah file penting yang dibutuhkan Jekyll. File ini berguna ketika kita akan meng-commit ke Github. Isi file ini adalah daftar file atau folder yang tidak akan di upload ke Github.</p></li>
+
+<li>README
+<p>Ini juga bukan file yang penting. Tapi disarankan untuk setiap repositori Github. File ini berisi deskripsi singkat tentang repositori.</p></li>
+
+<li>_config.yml
+<p>File ini berfungsi untuk menyimpan konfigurasi setting Jekyll. Jika file ini kosong, Jekyll akan menggunakan settingan default. Untuk daftar konfigurasi yang ada dan settingan default, bisa ditemukan di <a href="https://github.com/mojombo/jekyll/wiki/configuration">wiki: Configuration</a>.</p></li>
+
+<li>_layouts
+<p>Folder ini berfungsi untuk menyimpan semua template layout. Berikut adalah 2 contoh file layout:</p>
+<ul>
+<li>default.html
+<p>Ini adalah basic template kita. Tidak ada peraturan penamaan. Jika diganti, jangan lupa untuk mengganti nama layout pada YAML Front Matter blocks.</p></li>
+<li>post.html
+<p>Ini adalah basic template untuk post page. Untuk selanjutanya tentang YAML Front Matter blocks bisa dibaca di <a href="https://github.com/mojombo/jekyll/wiki/yaml-front-matter">wiki: YAML Front Matter</a>.</p></li>
+</ul></li>
+
+<li>_posts
+<p>Ini adalah folder untuk postingan yang telah ditulis. Peraturan penamaan file dibutuhkan disini. Diawali dengan tanggal lalu judul post dengan susunan tahun-bulan-tanggal-judul-post.markdown. Contoh: <code>2011-08-27-judul-post.markdown</code>. Nama file ini akan digunakan juga untuk permalink post.</p>
+<ul>
+<li>2011-08-27-judul-post.markdown
+<p>Isi postingan ditulis di file ini. File ini ditulis menggunakan syntax markdown, cek juga <a href="http://daringfireball.net/projects/markdown/syntax">dokumentasi syntax Markdown</a>. Jangan lupa untuk memasukkan YAML Front Matter pada awal file:
+{% highlight bash %}
+---
+layout: post
+title: Judul post
+---
+{% endhighlight %}</p></li>
+</ul></li>
+
+<li>index.html
+<p>File ini berisi halaman utama blog. Bisa diisi sesuai selera tergantung apa yang akan dimunculkan di front-page.</p></li>
+</ol>
+
+<h3>Saatnya pergi ke Terminal</h3>
+<p>Sekarang buka Terminal dan masuk ke direktori <code>username.github.com</code>. Masukkan perintah 
+{% highlight bash %}
+jekyll --server --auto
+{% endhighlight %}
+Buka browser dan masuk ke <code>http://localhost:4000</code>. Lihat hasilnya.</p>
+
+<p>Jekyll menggunakan <a href="http://www.liquidmarkup.org/">Liquid Markup</a> untuk templating. Daftar data template yang tersedia bisa dilihat di <a href="https://github.com/mojombo/jekyll/wiki/Template-Data/">wiki: Template Data</a> dan <a href="https://github.com/mojombo/jekyll/wiki/Liquid-Extensions/">wiki: Liquid Extensions</a>.</p>

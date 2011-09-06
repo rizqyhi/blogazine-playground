@@ -1,0 +1,39 @@
+---
+layout: post
+title: Blogazine di Webstatis dengan Jekyll
+---
+
+<p>Beberapa hari yang lalu, saya melihat status facebook yang berisi bagaimana ber-blogazine ria di webstatis dengan Jekyll. Kemudian saya terpikir untuk membuat plugin untuk mempermudah dalam membuat style blogazine. Pemikiran saya, bagaimana caranya untuk:</p>
+<ul>
+<li>Memasukkan nama file css dalam postingan dengan memanfaatkan YAML front block</li>
+<li>Memasukkan element <code>&lt;link&gt;</code> dalam setiap postingan yang memiliki style blogazine</li>
+
+<p>Berangkat dari pemikiran tersebut, saya mulai mempelajari struktur plugin Jekyll. Bingung! Lalu saya mencari referensi dan menemukan tulisan tentang bagaimana membuat meta tag desccriptin untuk setiap post. Ternyata code-nya sangat simple.</p>
+
+<h3>Penerapan</h3>
+<ol>
+<li>Menambahkan Liquid Tag pada layout untuk post
+<p>Saya menggunakannya seperti ini dan menempatkannya <strong>di bawah stylesheet utama</strong>:</p>
+{% highlight ruby %}
+{{ "{% if page.style "}}%}
+<link rel="stylesheet" type="text/css" href="/css/{{ "{{ page.style "}}}}.css">
+{{ "{% endif "}}%}
+{% endhighlight %}
+<p>Variabel <code>page.style</code> adalah salah satu dari YAML front block pada setiap awal post. <code>{{ "{{ page.style "}}}}</code> menyatakan "<em>jika dalam YAML front block variabel style didefinisikan, maka element <code>&lt;link&gt;</code> akan dibuat</em>"</p></li>
+
+<li>Copy file css
+<p>Copy file css ke dalam folder css. Pastikan nama file sama dengan yang ditulis pada YAML front block untuk style.</p></li>
+
+<li>Menulis post
+<p>Berikut adalah contoh YAML front block dengan style blogazine-test:</p>
+{% highlight ruby %}
+---
+layout: post
+title: Testing Blogazine Style di Jekyll
+style: blogazine-test
+---
+{% endhighlight %}
+<p>Pastikan value style sama dengan nama file css yang ada.</p></li>
+</ol>
+
+<p><em>Yup, that's all</em>. Hanya itu. Simple dan mudah :D</p>
