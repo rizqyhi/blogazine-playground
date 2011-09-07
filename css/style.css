@@ -89,6 +89,7 @@ article pre code {padding:0;border:none;overflow-x:scroll;width:100%;}
 .box5 {background:#60BFF3}
 .clearfix:before, .clearfix:after {content:"\0020";display:block;height:0;overflow:hidden}
 .clearfix:after {clear:both}
+pre{font-size:13px;background:#484848;padding:1em;margin:1.5em 0;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}pre .str{color:#79BD56}pre .kwd{color:#E39B79}pre .com{color:#888}pre .typ{color:#98fb98}pre .lit{color:#DE8E50}pre .pun{color:#FEA}pre .pln{color:#fff}pre .tag{color:#A1C8FD}pre .atn{color:#bdb76b}pre .atv{color:#ffa0a0}pre .dec{color:#98fb98}
 .amp {font-family:"Goudy Old Style",Baskerville,Georgia,serif;font-style:italic}
 .followme {color:#60BFF3}
 .followme:hover {color:#60BFF3;border-bottom:1px dotted #60BFF3}
