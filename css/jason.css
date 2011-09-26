@@ -1,0 +1,12 @@
+body {font-family:Arial, sans-serif;font-size:100%;background:#e6e2b3;}
+
+#jason1 {background:url(../img/body-jason.png) repeat-x}
+
+#jason-open {padding:40px 0;color:#333;background:url(../img/newjason.png) no-repeat}
+#jason-open p {line-height:1.5em}
+h1 a {background:url(../img/jason-logo.png) no-repeat;display:block;width:948px;height:76px;text-indent:-9999px}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11 {margin:20px 0}
+.opening {margin-top:170px}
+
+#jason2 {background:url(../img/jason-draw-top.png) no-repeat center top,url(../img/jason-draw-bottom.png) no-repeat center bottom}
+#jason-song {padding:40px 0}

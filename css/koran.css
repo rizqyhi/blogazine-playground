@@ -1,0 +1,41 @@
+body {font-size:14px;line-height:1.5em}
+a {color:#bf3b37}
+a:hover {color:#bf3b37;border-bottom:1px dotted #bf3b37}
+a:visited {border-bottom:2px solid #bf3b37}
+#header {padding:20px 0 30px}
+#header hgroup {text-align:center}
+#header h1 a {font-size:32px}
+#description {text-transform:uppercase;letter-spacing:2px}
+#navigation {margin:10px 0;padding:1px;overflow:hidden;border-top:1px solid #222;border-bottom:1px solid #222}
+#navigation ul {overflow:hidden;border-top:1px dotted #555;border-bottom:1px dotted #555}
+#navigation a {float:left;margin:3px 10px}
+#navigation a:hover {border-bottom:none;color:#444}
+#today-date {float:right;margin:3px 0}
+
+h3 {display:block;padding:1px 0;margin-bottom:10px;text-align:center;text-transform:uppercase;border-top:1px solid #222;border-bottom:1px solid #222}
+h3 span {display:block;padding:3px 0;border-top:1px dotted #555;border-bottom:1px dotted #555}
+.link-berita {font-style:italic}
+
+#berita-samping article {margin-bottom:20px;text-align:justify}
+#berita-utama {padding-bottom:30px;text-align:justify}
+.video {padding:0 0 20px}
+#berita-full {margin-bottom:30px;text-align:justify;-moz-column-count:4;
+-moz-column-gap: 2em;
+-moz-column-rule: 1px solid #c4c8cc;
+-webkit-column-count: 4;
+-webkit-column-gap: 2em;
+-webkit-column-rule: 1px solid #c4c8cc;}
+#berita-full h2 {margin-bottom:10px;text-align:left;font-size:24px}
+#lagu {margin-bottom:30px;text-align:justify;-moz-column-count:2;
+-moz-column-gap: 2em;
+-moz-column-rule: 1px solid #c4c8cc;
+-webkit-column-count: 2;
+-webkit-column-gap: 2em;
+-webkit-column-rule: 1px solid #c4c8cc;}
+
+#tweets {background:url(../img/gossip_birds.png) no-repeat bottom}
+#recent-tweet {padding-bottom:80px;margin:0;list-style-type:none}
+#recent-tweet li {margin-bottom:5px}
+
+#redaksi strong, #redaksi p em, #redaksi cite {display:block;text-align:center}
+#redaksi ul {list-style-type:none;margin:10px 0}

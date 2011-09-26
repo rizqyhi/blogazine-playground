@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	
 	<title>{{ page.title }} - hi! Rizh</title>
-	<meta name="description" content="The simple blog of Rizqy Hidayat">
+	<meta name="description" content="{{ page.description }}">
 	<meta name="author" content="Rizqy Hidayat">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link href="/atom.xml" rel="alternate" title="hi! Rizh blog's Feeds!" type="application/atom+xml" />
-	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1">
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
 	{% if page.grid %}<link rel="stylesheet" type="text/css" href="/css/{{ page.grid }}.css">{% endif %}
 	{% if page.style %}
 	<link rel="stylesheet" type="text/css" href="/css/{{ page.style }}.css">
@@ -20,22 +20,7 @@
 
 	</head>
 <body id="post">
-<span class="box1"></span><span class="box2"></span><span class="box3"></span><span class="box4"></span><span class="box5"></span>
-
-<header id="header" class="clearfix">
-<h2 id="title"><a href="/">hi! Rizh</a></h2>
-<div>
-<h1>{{ page.title }}</h1>
-<time datetime="{{ page.date }}" class="date">{{ page.date | date_to_long_string }}</time>
-</div>
-</header>
-
-<article>
 {{ content }}
-
-<section id="disqus_thread"></section>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</article>
 
 <script type="text/javascript">
 var disqus_shortname = 'hirizhblog';
@@ -48,18 +33,5 @@ var disqus_url = 'http://hirizh.github.com{{ page.url }}';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Yanone+Kaffeesatz:700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
 </body>
 </html>
