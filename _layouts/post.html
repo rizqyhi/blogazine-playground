@@ -8,6 +8,7 @@
 	<meta name="author" content="Rizqy Hidayat">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="oaoaukN2QZvlXMO6-ExMRSm1Pybqro15iIPz9_ZpLvY" />
 	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -49,17 +50,14 @@ var disqus_url = 'http://hirizh.github.com{{ page.url }}';
     })();
 </script>
 <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Yanone+Kaffeesatz:700:latin' ] }
-  };
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25913655-1']);
+  _gaq.push(['_trackPageview']);
+
   (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-</body>
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></body>
 </html>
