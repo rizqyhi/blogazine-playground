@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http:http://hirizh.github.com/www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-      <loc>/about.html</loc>
+      <loc>http:http://hirizh.github.com/hirizh.github.com/about.html</loc>
       <lastmod>2011-09-05</lastmod>
   </url>
   <url>
-      <loc>/atom.xml</loc>
+      <loc>http://hirizh.github.com/atom.xml</loc>
       <lastmod>2011-08-11</lastmod>
   </url>
   <url>
-      <loc>/</loc>
+      <loc>http://hirizh.github.com/</loc>
       <lastmod>2011-09-29</lastmod>
   </url>
   <url>
-      <loc>//2011/09/koran</loc>
+      <loc>http://hirizh.github.com/2011/09/koran</loc>
       <lastmod>2011-09-22</lastmod>
       <changefreq>never</changefreq>
   </url>
   <url>
-      <loc>//2011/09/jason-mraz</loc>
+      <loc>http://hirizh.github.com/2011/09/jason-mraz</loc>
       <lastmod>2011-09-13</lastmod>
       <changefreq>never</changefreq>
   </url>
   <url>
-      <loc>//2011/09/blogazine-dengan-jekyll</loc>
+      <loc>http://hirizh.github.com/2011/09/blogazine-dengan-jekyll</loc>
       <lastmod>2011-09-06</lastmod>
       <changefreq>never</changefreq>
   </url>
   <url>
-      <loc>//2011/08/sekilas-tentang-heello</loc>
+      <loc>http://hirizh.github.com/2011/08/sekilas-tentang-heello</loc>
       <lastmod>2011-08-28</lastmod>
       <changefreq>never</changefreq>
   </url>
   <url>
-      <loc>//2011/08/konfigurasi-dan-menjalankan-jekyll</loc>
+      <loc>http://hirizh.github.com/2011/08/konfigurasi-dan-menjalankan-jekyll</loc>
       <lastmod>2011-08-27</lastmod>
       <changefreq>never</changefreq>
   </url>
   <url>
-      <loc>//2011/08/install-jekyll-ubuntu</loc>
+      <loc>http://hirizh.github.com/2011/08/install-jekyll-ubuntu</loc>
       <lastmod>2011-08-18</lastmod>
       <changefreq>never</changefreq>
   </url>
   <url>
-      <loc>//2011/08/selamat-datang</loc>
+      <loc>http://hirizh.github.com/2011/08/selamat-datang</loc>
       <lastmod>2011-08-12</lastmod>
       <changefreq>never</changefreq>
   </url>
