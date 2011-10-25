@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
       <loc>http://hirizh.github.com/about.html</loc>
-      <lastmod>2011-09-05</lastmod>
+      <lastmod>2011-10-25</lastmod>
+  </url>
+  <url>
+      <loc>http://hirizh.github.com/arsip.html</loc>
+      <lastmod>2011-10-25</lastmod>
   </url>
   <url>
       <loc>http://hirizh.github.com/atom.xml</loc>
@@ -10,7 +14,12 @@
   </url>
   <url>
       <loc>http://hirizh.github.com/</loc>
-      <lastmod>2011-09-29</lastmod>
+      <lastmod>2011-10-20</lastmod>
+  </url>
+  <url>
+      <loc>http://hirizh.github.com/2011/10/memanggil-feed-dengan-google-feed-api</loc>
+      <lastmod>2011-10-24</lastmod>
+      <changefreq>never</changefreq>
   </url>
   <url>
       <loc>http://hirizh.github.com/2011/09/koran</loc>

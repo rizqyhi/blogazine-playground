@@ -11,6 +11,7 @@ title: Arsip - hi! Rizh
 <p>Hello. Saya suka web design dan web development beraliran simple dan minimalis.</p>
 <nav>
 <ul>
+<li><a href="/about.html" class="arsip"><span class="garing">//</span> saya</a></li>
 <li><a href="/arsip.html" class="arsip"><span class="garing">//</span> arsip</a></li>
 <li><a href="/atom.xml" class="rss"><span class="garing">//</span> rss</a></li>
 </ul></nav>
@@ -25,7 +26,7 @@ title: Arsip - hi! Rizh
 		
 <section id="post-list">
 <ol id="archive">
-{% for post in site.posts offset: 100 %}
+{% for post in site.posts offset: 0 limit: 100 %}
 <li><a href="{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_string }}</time></li>
 {% endfor %}
 </ol>

@@ -116,7 +116,7 @@ module Jekyll
         else
           changefreq = "never"
         end
-        result += entry("/"+post.url, post.date, changefreq, site)
+        result += entry(post.url, post.date, changefreq, site)
       end
       
         result
@@ -137,7 +137,7 @@ module Jekyll
     def entry(path, date, changefreq, site)
       "
   <url>
-      <loc>#{site.config['baseurl']}#{path}</loc>
+      <loc>#{site.config['onlineurl']}#{path}</loc>
       <lastmod>#{date.strftime("%Y-%m-%d")}</lastmod>#{if changefreq.length > 0
           "\n      <changefreq>#{changefreq}</changefreq>" end}
   </url>"

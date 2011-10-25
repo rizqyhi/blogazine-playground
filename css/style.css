@@ -79,7 +79,7 @@ article p {margin:1em 0 0.5em;line-height:1.5em}
 article h3 {font-size:1.5em;margin:1em 0 0 -20px;padding-left:10px;border-left:10px solid #60BFF3}
 article code {padding:2px 5px;border:1px dashed #aaa}
 article pre code {padding:0;border:none;overflow-x:auto;width:100%;}
-.highlight  { background: #4E5052; background: rgba(0,0,0,.50); overflow-x:auto;margin-bottom: 10px;}
+.highlight  { background: #4E5052; background: rgba(0,0,0,.8); overflow-x:auto;margin-bottom: 10px;}
 .hll { background-color: #ffffcc }
 .c { color: #586E75 } /* Comment */
 .err { color: #93A1A1 } /* Error */
