@@ -10,6 +10,12 @@ Baiklah, cukup sudah basa-basinya, masuk ke inti. Kali ini saya hanya ingin menu
 
 Sebelum menggunakan layanan API dari Google, disyaratkan untuk memiliki sebuah API key. Untuk mendapatkannya, masuk ke halaman [http://code.google.com/apis/loader/signup.html](http://code.google.com/apis/loader/signup.html).
 
+Masukkan api key.
+{% highlight html %}
+<script type="text/javascript" src="http://www.google.com/jsapi?key=your_key"></script>
+{% endhighlight %}
+
+Dan ini adalah javascript untuk memanggil feednya.
 {% highlight javascript %}
 google.load("feeds", "1"); //Memanggil Feed API
 google.setOnLoadCallback(feeds); //memanggil feed dalam fungsi feeds saat halaman di-load
