@@ -26,9 +26,13 @@ $(document).ready(function(){
 		}
 	});
 	$('.video a').height(biggestHeight);
+	
 	var winheight = $(window).height();
+	var winwidth = $(window).width();
 	var scrollbottom = $(window).scrollTop() + winheight;
 	
+	$("div.pp_overlay").width(winwidth);
+	$("div.pp_overlay").height(winheight);
 	$("#welcome").height(winheight);
 	$("#masuk").click(function(){
 		var namaanda = $("#nama").val();
@@ -55,7 +59,7 @@ $(document).ready(function(){
 	});
 	$("#comment").click(function(){
 		$("#about").hide();
-		$("#komentar").slideToggle("slow");
+		$("#disqus_thread").slideToggle("slow");
 		$("html,body").animate({scrollTop:scrollbottom},"slow");
 		return false;
 	});
