@@ -1,5 +1,5 @@
-div.dark_rounded .pp_close {position:fixed;font-size:28px;font-family:LeckerliOne,serif;color:#fff;cursor: pointer;text-shadow:0 0 10px #fff}
-div.dark_rounded .pp_description {width:100%;color: #fff; position:fixed;left:10px;top:10px;font-family:LeckerliOne,serif;font-size:36px;text-shadow:0 0 10px #fff, 0 0 30px #fff}
+div.dark_rounded .pp_close {position:fixed;font-size:28px;font-family:"Leckerli One",serif;color:#fff;cursor: pointer;text-shadow:0 0 10px #fff}
+div.dark_rounded .pp_description {width:100%;color: #fff; position:fixed;left:10px;top:10px;font-family:"Leckerli One",serif;font-size:36px;text-shadow:0 0 10px #fff, 0 0 30px #fff}
 div.dark_rounded .pp_loaderIcon { background: url(../img/prettyPhoto/dark_rounded/loader.gif) center center no-repeat; } /* Loader icon */
 div.pp_pic_holder a:focus {outline:none}
 div.pp_overlay {background:#000;background:url(../img/bioskop.jpg) top left no-repeat;-moz-background-size:cover;display:none;left:0;position:fixed;top:0;width:100%;z-index:9500}
