@@ -1,0 +1,232 @@
+/*
+ * Rizqy Hidayat
+ * http://hirizh.name/
+ * 
+ * hi! Rizh: Playground adalah pajangan blogazine saya, menggunakan web statis dan Github.
+ * Ini adalah css untuk halaman 404.
+ * http://playground.hirizh.name/
+ */
+
+/* --------------------------------------------------------------------------
+HTML5 ✰ Boilerplate Normalize CSS
+----------------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #555; color: #fff; text-shadow: none; }
+::selection { background: #555; color: #fff; text-shadow: none; }
+
+a { color: #67b600; text-decoration:none;}
+a:hover { color: #444; text-decoration:none}
+a:focus { outline: 0; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* --------------------------------------------------------------------------
+@font-face
+----------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'Lavanderia';
+    src: url('../font-face/LavanderiaDelicate.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('../font-face/websymbols-regular-webfont.eot');
+    src: url('../font-face/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-face/websymbols-regular-webfont.woff') format('woff'),
+         url('../font-face/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../font-face/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* --------------------------------------------------------------------------
+Style 404
+----------------------------------------------------------------------------- */
+body {
+	background:#67b600;
+	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	color: #fff;
+}
+
+#wrapper {
+	width:600px;
+	margin:0 auto
+}
+#wrapper p {
+	margin:0 0 10px;
+	font-size:15px
+}
+#wrapper p a {
+	padding-bottom:2px;
+	color:#fff;
+	border-bottom:1px solid #eee
+}
+#wrapper p a:hover {
+	border-bottom:2px solid #eee
+}
+.pointPointArrow{
+    width:16px;
+    height:16px;
+    background:url(../img/arrow.png) no-repeat;
+    position:absolute;
+    display:none;
+    z-index: 100000;
+    top:0;
+    left:0;
+}
+
+#beranda {
+	background-color:#3bb3e0;
+	width:150px;
+	display:inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+	position:fixed;
+	bottom:-35px;
+	padding-bottom:10px;
+	padding-top:10px;
+	opacity:0.05;
+	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(44,160,202)),
+	color-stop(1, rgb(62,184,229))
+	);
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-moz-transition:ease 0.6s all;
+}
+#beranda:hover {
+	bottom:0;
+	opacity:0.5
+}
+#beranda:active {
+	opacity:0.9;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(62,184,229)),
+	color-stop(1, rgb(44,160,202))
+	);
+	-webkit-box-shadow: inset 0px 4px 1px #0b698b, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-moz-box-shadow: 0px 2px 0px 1px #156785, 0px 5px 3px #999;
+	-o-box-shadow: 0px 2px 0px 1px #156785, 0px 5px 3px #999;
+	box-shadow: inset 0px 4px 1px #0b698b, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+#beranda::before {
+	background-color:#fff;
+	content:'N';
+	font-size:20px;
+    font-family:'WebSymbolsRegular';
+    text-align:center;
+    line-height:40px;
+    color:#444;
+	width:150px;
+	height:40px;
+	position:absolute;
+	top:-30px;
+	left:0px;
+	margin-top:-11px;
+	z-index:-1;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#beranda:active::before {
+	top: -30px;	
+	-webkit-box-shadow: 0px 3px 0px #ccc;
+	-moz-box-shadow: 0px 3px 0px #ccc;
+	-o-box-shadow: 0px 3px 0px #ccc;
+	box-shadow: 0px 3px 0px #ccc;
+}
+
+
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+

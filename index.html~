@@ -4,7 +4,7 @@ layout: home
 
 <header id="header" class="clearfix">
 	<hgroup>
-		<h1 id="site-title"><a href="/">hi! Rizh: Playground</a></h1>
+		<h1 id="site-title"><a href="#">hi! Rizh: Playground</a></h1>
 	</hgroup>
 
 	<nav id="main-nav">

@@ -6,8 +6,8 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>hi! Rizh blog</title>
- <link href="http://playground.hirizh.name/atom.xml" rel="self"/>
- <link href="http://playground.hirizh.name"/>
+ <link href="http://hirizh.github.com/atom.xml" rel="self"/>
+ <link href="http://hirizh.github.com"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://playground.hirizh.name/</id>
  <author>
