@@ -1,13 +1,3 @@
-/*
- * Rizqy Hidayat
- * http://hirizh.name/
- * 
- * hi! Rizh: Playground adalah pajangan blogazine saya, menggunakan web statis dan Github.
- * http://playground.hirizh.name/
- * 
- * Judul: Move On
- */
- 
 #wrapper {width:780px;margin:10px auto}
 #moveon {overflow:hidden;position:relative}
 #forward {font-size:10em;font-family:Oswald, sans-serif;color:#DF7366;text-transform:uppercase}

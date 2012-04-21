@@ -17,7 +17,7 @@ layout: nil
 	<url>
 		<loc>http://playground.hirizh.name{{ post.url }}</loc>
 		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-		<changefreq>never</changefreq>
+		<changefreq>monthly</changefreq>
 	</url>
 	{% endfor %}
 </urlset>

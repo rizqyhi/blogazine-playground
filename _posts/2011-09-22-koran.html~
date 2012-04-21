@@ -15,9 +15,9 @@ description: Harian di Garis Berwajah Lama. Sebuah koran online dengan desain tr
 <nav id="navigation">
 <ul>
 <li><a href="/">Beranda</a></li>
-<li><a href="#video">Video</a></li>
-<li><a href="#lagu">Lagu</a></li>
-<li><a href="#redaksi">Redaksi</a></li>
+<li><a href="#">Video</a></li>
+<li><a href="#">Lagu</a></li>
+<li><a href="#">Redaksi</a></li>
 <li id="today-date">Sabtu, 24 September 2011</li>
 </ul>
 </nav>

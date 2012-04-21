@@ -1,13 +1,3 @@
-/*
- * Rizqy Hidayat
- * http://hirizh.name/
- * 
- * hi! Rizh: Playground adalah pajangan blogazine saya, menggunakan web statis dan Github.
- * http://playground.hirizh.name/
- * 
- * Judul: Jason Mraz Night
- */
- 
 @import url(prettyPhoto.css);
 
 /*  HTML5 ✰ Boilerplate  */

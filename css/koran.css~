@@ -8,7 +8,7 @@
  * Judul: Warta Kertas
  */
  
-body {font-size:14px;line-height:1.5em;font-family:Georgia,serif}
+body {font-size:14px;line-height:1.5em}
 a {color:#bf3b37}
 a:hover {color:#bf3b37;border-bottom:1px dotted #bf3b37}
 a:visited {border-bottom:2px solid #bf3b37}

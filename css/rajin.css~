@@ -1,13 +1,3 @@
-/*
- * Rizqy Hidayat
- * http://hirizh.name/
- * 
- * hi! Rizh: Playground adalah pajangan blogazine saya, menggunakan web statis dan Github.
- * http://playground.hirizh.name/
- * 
- * Judul: Jangan Terlalu Rajin
- */
- 
 body {background:#F2EDA0;color:#44444f}
 a {color:#248C72}
 a:visited {border-bottom:none}
