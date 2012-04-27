@@ -32,7 +32,7 @@ layout: home
 					
 		<div class="post-meta">
 			<span class="published">{{ post.date | date_to_string }}</span>
-			<span class="comment-count"><a href="#">22 Komentar</a></span>
+			<span class="comment-count"><a href="{{ post.url }}#disqus_thread">Komentar</a></span>
 			<span class="tweet"><a href="https://twitter.com/share?url=http://playground.hirizh.name{{ post.url }}&amp;text={{ post.title }}&amp;lang=id&amp;related=rizqy22" target="_blank">Tweet</a></span>
 		</div>			
 	</li>

@@ -29,7 +29,7 @@
 </div>
 
 <script type="text/javascript">
-	var disqus_shortname = 'hirizhblog';
+	var disqus_shortname = 'hirizhblog'; // required: replace example with your forum shortname
 
 	(function () {
 		var s = document.createElement('script'); s.async = true;
