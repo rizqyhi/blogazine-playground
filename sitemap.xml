@@ -1,7 +1,3 @@
----
-layout: nil
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
@@ -13,11 +9,41 @@ layout: nil
 		<lastmod>2012-04-20</lastmod>
 	</url>
 
-	{% for post in site.posts %}
+	
 	<url>
-		<loc>http://playground.hirizh.name{{ post.url }}</loc>
-		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+		<loc>http://playground.hirizh.name/2012/07/marhaban-ya-ramadhan</loc>
+		<lastmod>2012-07-20T00:00:00+07:00</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
-	{% endfor %}
+	
+	<url>
+		<loc>http://playground.hirizh.name/2012/04/tipografi-diskusi-blogger-pemula</loc>
+		<lastmod>2012-04-20T00:00:00+07:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://playground.hirizh.name/2012/01/jangan-terlalu-rajin</loc>
+		<lastmod>2012-01-07T00:00:00+07:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://playground.hirizh.name/2012/01/blogazine-adalah</loc>
+		<lastmod>2012-01-03T00:00:00+07:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://playground.hirizh.name/2011/11/jason-mraz-night</loc>
+		<lastmod>2011-11-22T00:00:00+07:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	<url>
+		<loc>http://playground.hirizh.name/2011/09/koran</loc>
+		<lastmod>2011-09-22T00:00:00+07:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
 </urlset>
