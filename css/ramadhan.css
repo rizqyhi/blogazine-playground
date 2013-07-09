@@ -19,7 +19,15 @@
     font-style: normal;
 }
  
-body {font-size:100%;font-family:'Delius Swash Caps',Helvetica,sans-serif;background-color:#67b600;background-image:-moz-radial-gradient(rgba(255,255,255,0.6),#67b600);background-attachment:fixed}
+body {
+	font-size:100%;
+	font-family:'Delius Swash Caps',Helvetica,sans-serif;
+	background-color:#67b600;
+	background-image:-moz-radial-gradient(rgba(255,255,255,0.6),#67b600);
+	background-image:-webkit-radial-gradient(rgba(255,255,255,0.6),#67b600);
+	background-image:radial-gradient(rgba(255,255,255,0.6),#67b600);
+	background-attachment:fixed
+}
 .wrapper {width:840px;margin:0 auto}
 
 a, a:active, a:visited {color:#289e9e;text-decoration:none}
