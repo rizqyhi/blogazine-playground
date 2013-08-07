@@ -1,0 +1,139 @@
+/*
+ * Rizqy Hidayat
+ * http://hirizh.name/
+ * 
+ * hi! Rizh: Playground adalah pajangan blogazine saya, menggunakan web statis dan Github.
+ * http://playground.hirizh.name/
+ * 
+ * Judul: Happy Ied Mubarak 1434H
+ */
+
+@font-face {
+    font-family: 'CeriaLebaran';
+    src: url('/font-face/ceria_lebaran-webfont.eot');
+    src: url('/font-face/ceria_lebaran-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font-face/ceria_lebaran-webfont.woff') format('woff'),
+         url('/font-face/ceria_lebaran-webfont.ttf') format('truetype'),
+         url('/font-face/ceria_lebaran-webfont.svg#ceria_lebaranregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lavanderia';
+    src: url('../font-face/LavanderiaDelicate.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+body {
+	font-size:100%;
+	font-family:Helvetica,sans-serif;
+	background:#000
+}
+.wrapper {width:940px;margin:0 auto}
+
+a, a:active, a:visited {color:#146e6e;text-decoration:none}
+a:hover {color:#146e6e;text-decoration:underline}
+::-moz-selection{background:rgba(0,0,0,0.7);color:#fff;text-shadow:none}
+::selection {background:rgba(0,0,0,0.7);color:#fff;text-shadow:none}
+
+#main-nav {
+	margin-bottom:30px;
+	padding:10px 0;
+	border-top: 3px double rgba(255,255,255,0.3);
+	border-bottom: 3px double rgba(255,255,255,0.3);
+	text-align:center
+}
+#main-nav li {
+	display:inline-block
+}
+#main-nav a {
+	color:#fff;
+	font-size:15px;
+}
+#main-nav li:after {
+	content: '//';
+	margin: 0 10px;
+	opacity:0.4	
+}
+#main-nav li:last-child:after {
+	content:''
+}
+
+#main {
+	padding: 50px 0 150px;
+	background: #000 url(../img/hilal.jpg) no-repeat top left;
+	background-size: cover
+}
+#content {
+	width: 940px !important;
+	margin: 0 auto;
+	position:relative
+}
+#selamat, #fitri, #maaf {
+	margin:0
+}
+#selamat {
+	margin:50px 0 -20px;
+	font-family:Lavanderia;
+	font-weight:normal;
+	font-size:70px;
+	line-height:1.5em;
+	color:#fff;
+	text-shadow:1px 1px 0 rgba(0,0,0,0.3);
+	opacity: 0.4
+}
+#fitri {
+	font-family:Lavanderia;
+	font-weight:normal;
+	font-size:120px;
+	line-height:1.1em;
+	text-align:left;
+	color:#fff;
+	text-shadow:1px 1px 0 rgba(0,0,0,0.3);
+}
+#fitri span {
+	font-size:90px;
+	display:block;
+	padding-left:270px;
+	margin-top:-70px;
+	opacity: 0.6
+}
+#maaf {
+	display:inline-block;
+	padding:15px 0;
+	font-family:Georgia,serif;
+	font-style:italic;
+	font-size:22px;
+	font-weight:normal;
+	color:#fff;
+	opacity: 0.5;
+	border-top: 3px double rgba(255,255,255,0.3);
+	border-bottom: 3px double rgba(255,255,255,0.3)
+}
+
+#footer {
+	overflow:hidden;
+	margin:60px 0 0;
+	padding:20px 0;
+	overflow:hidden;
+	background:rgba(0,0,0,0.2);
+	color:#fff
+}
+#disqus_thread {
+	width:600px;
+	float:left
+}
+#side-footer {
+	width:220px;
+	float:right;
+}
+.widget h4 {
+	margin:0 0 10px;
+	padding:0 0 5px;
+	font-size:16px;
+	border-bottom:1px dashed #fff
+}
+.widget div {
+	margin:0 0 10px;
+}
